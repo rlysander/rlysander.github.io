@@ -10,7 +10,6 @@ source "https://rubygems.org"
 # Happy Jekylling!
 
 gem "github-pages", group: :jekyll_plugins
-gem "jekyll-include-cache", group: :jekyll_plugins
 
 # To upgrade, run `bundle update`.
 
@@ -23,10 +22,8 @@ gem "jekyll-include-cache", group: :jekyll_plugins
 #
 # If you have any other plugins, put them here!
 # Cf. https://jekyllrb.com/docs/plugins/installation/
+
 group :jekyll_plugins do
-  gem "jekyll"  # , "~> 3.8.5"
   gem "webrick"
-  gem "jekyll-remote-theme"
-  gem "minimal-mistakes-jekyll"
-  gem "kramdown-parser-gfm"
+  gem "jekyll-titles-from-headings"
 end
